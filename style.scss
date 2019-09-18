@@ -11,13 +11,9 @@ Tags: white, light, one-column, two-columns, right-sidebar, flexible-width, cust
 Text Domain: simplemod
 */
 
-/*****************************************
- *  VARIABLES AND SETTINGS
- */
+
 @import "sass/variables";
 
+@import "sass/navbar";
 
-/*****************************************
- *  CUSTOM STYLESHEET
- */
 @import "sass/custom";

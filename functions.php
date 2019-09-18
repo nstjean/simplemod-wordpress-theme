@@ -83,4 +83,10 @@ function custom_add_fa() {
 }
 add_action('wp_enqueue_scripts', 'custom_add_fa');
 
+// Load Javascript
+function custom_add_javascript() {
+	wp_enqueue_script('script', get_template_directory_uri().'/js/script.js', array('jquery'), 1.0, true);
+}
+add_action('wp_enqueue_scripts', 'custom_add_javascript');
+
 ?>

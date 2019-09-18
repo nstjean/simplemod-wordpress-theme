@@ -11,8 +11,10 @@
 <body>
 
 	<header>
-		<div class="row">
-
+		<nav class="row">
+			<div id="toggle">
+				<i class="fas fa-bars"></i>
+			</div>
 			<section class="top-section top-title">
 				<h1 id="site-title">
 					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"> <?php bloginfo('name'); ?> </a>
@@ -23,20 +25,20 @@
 						'theme_location' => 'primary',
 						'container' => false,
 						'container_class' => '',
-						'container_id' => '',
-						'menu_class' => 'right',
+						'container_id' => 'menu',
+						'menu_class' => 'main-menu',
 						'menu_id' => ''
 						)
 					);
 				} ?>
 			</section>
 
-			<section class="top-section icon-menu">
-				<ul>
+			<section class="top-section">
+				<ul class="icon-menu">
 					<li><i class="fab fa-linkedin"></i></li>
 					<li><i class="fab fa-github-square"></i></li>
 				</ul>
 			</section>
 
-		</div>
+		</nav>
 	</header>

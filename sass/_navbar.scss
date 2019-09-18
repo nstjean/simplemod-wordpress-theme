@@ -1,0 +1,170 @@
+/*
+ *	NAV BAR
+ */
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	section {
+		display: flex;
+		align-items: center;
+	}
+	h1 {
+		margin: 0;
+		height: 100%;
+	}
+	ul {
+	 	margin: 0;
+	 	padding: 0;
+	 	list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	li {
+		flex: 0 1 auto;
+	}
+	li a {
+		display: inline-block;
+		padding: 0;
+		color: $header-link;
+		font-weight: bold;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	li a:hover {
+		color: $header-link;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.main-menu {
+		height: 60px;
+		margin-left: 1rem;
+	}
+	.main-menu li {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	    transition: all .8s ease;
+	    border-top: 4px solid rgb(255, 255, 255, 0);
+	    border-bottom: 4px solid rgb(255, 255, 255, 0);
+		margin-left: 2rem;
+	}
+	.main-menu li:hover {
+		border-bottom: 4px solid rgb(255, 255, 255, 0.7);
+	}
+	.main-menu li a {
+		height: 60px;
+		line-height: 60px;
+	}
+	.icon-menu i {
+		font-size: 20px;
+		color: #FFF;
+			margin: 0 0 0 12px;
+	}
+	#toggle {
+		align-self: flex-start;
+		display: none;
+		height: 36px;
+	}
+	#toggle i {
+	 	color: white;
+	 	font-size: 30px;
+		height: 30px;
+		padding-top: 3px;
+	}
+	#toggle i:hover {
+		color: #cccccc;
+	}
+	.hidden {
+		display: none;
+	}
+	.active {
+		display: flex !important;
+	}
+}
+
+/*
+ * HEADER FONTS
+ */
+nav {
+	.main-menu li {
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	h1 {
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+	}
+	a, a:hover, h1 a:hover {
+		color: #FFF;
+	}
+	a:hover {
+		color: #CCC;
+	}
+	h1 a {
+		font-size: 1.6rem;
+	}
+}
+/* slightly collapsed menu */
+@media (max-width: 900px) {
+	nav {
+		height: 60px;
+		#site-title {
+			display: none;
+		}
+		.main-menu li {
+			height: 40px;
+		}
+		.main-menu li a {
+			height: 40px;
+			line-height: 40px;
+		}
+	}
+}
+/* fully collapsed menu */
+@media (max-width: 700px) {
+	nav {
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+	    transition: none;
+		#toggle {
+			display: block;
+		}
+		.top-section {
+			display: none;
+		}
+		.main-menu {
+			height: auto;
+			width: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		.main-menu li {
+			flex: 1 1 100%;
+			width: 100%;
+			margin: 10px 0 0 0;
+			height: 34px;
+		}
+		.main-menu li a {
+			width: 100%;
+			padding: 0;
+			height: 34px;
+			line-height: 34px;
+		}
+		.icon-menu {
+			padding: 1.0em 1.0em;
+		}
+		.icon-menu i {
+			font-size: 20px;
+			color: #FFF;
+			margin: 0 12px 0 0;
+		}
+	}
+}

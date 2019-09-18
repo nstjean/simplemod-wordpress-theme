@@ -1,8 +1,47 @@
-/*
- * Colors
- */
-$background = #ebebeb;
-$box-background = #ffffff;
-$code-background = #f9f9f9;
 
-$link-color = 
+// Fonts
+
+$title-font: Raleway, sans-serif;
+$main-font: 'Helvetica', "Helvetica Neue", Roboto, Arial, sans-serif;
+
+
+// Text Colors
+
+$text: #7b7b7b;
+$gray: #222222;
+$footer-text: #ffffff;
+$header-text: #ffffff;
+$header-link: #ffffff;
+$header-hover: #cccccc;
+$article-title: #222222;
+$sidebar-title: #555555;
+
+$link: #7318f0;
+$link-hover: #1345b2;
+
+$sidebar-link: #0280e0;
+$sidebar-hover: #7318f0;
+
+
+// Background Colors
+
+$background: #ebebeb;
+$box-background: #ffffff;
+$code-background: #f9f9f9;
+
+$header-bg-1: #3612a1;
+$header-bg-2: #0280e0;
+
+
+// Spacing
+
+$page-side-margin: 45px;
+$box-margin: 45px;
+$small-screen-margin: 20px;
+$main-column-padding: 45px;
+$side-column-padding: 45px;
+
+
+// Sizing
+
+$page-max-width: 1200px;
