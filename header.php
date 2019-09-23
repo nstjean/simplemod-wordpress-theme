@@ -35,8 +35,8 @@
 
 			<section class="top-section">
 				<ul class="icon-menu">
-					<li><i class="fab fa-linkedin"></i></li>
-					<li><i class="fab fa-github-square"></i></li>
+					<li><a href="https://www.linkedin.com/in/nataliestjean/"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/nstjean/"><i class="fab fa-github-square"></i></a></li>
 				</ul>
 			</section>
 

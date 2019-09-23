@@ -52,6 +52,13 @@ nav li a:hover {
   font-weight: bold;
   text-decoration: none;
 }
+nav .icon-menu li a {
+  font-weight: normal;
+}
+nav .icon-menu li:hover i {
+  color: #aaaaaa;
+  transition: all 0.4s ease;
+}
 nav .main-menu {
   height: 60px;
   margin-left: 1rem;
@@ -183,7 +190,7 @@ nav h1 a {
  * MAIN SETTINGS
  */
 body {
-  background: #ebebeb;
+  background: gainsboro;
   color: #222;
   font-family: "Helvetica", "Helvetica Neue", Roboto, Arial, sans-serif;
   font-style: normal;
@@ -315,7 +322,7 @@ footer {
  * POSTS
  */
 .col-main {
-  color: #7b7b7b;
+  color: #646464;
   font-size: 15px;
 }
 .col-main article {
