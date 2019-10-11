@@ -29,14 +29,14 @@ nav {
 		display: inline-block;
 		padding: 0;
 		color: $header-link;
-		font-weight: bold;
+		font-weight: 500;
 		font-size: 0.9em;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		text-decoration: none;
 	}
 	li a:hover {
 		color: $header-link;
-		font-weight: bold;
+		font-weight: 500;
 		text-decoration: none;
 	}
 	.icon-menu li {
@@ -99,9 +99,10 @@ nav {
  * HEADER FONTS
  */
 nav {
+	font-family: $main-font;
 	.main-menu li {
-		font-size: 14px;
-		text-transform: uppercase;
+		font-size: 18px;
+		// text-transform: uppercase;
 	}
 	h1 {
 		display: flex;

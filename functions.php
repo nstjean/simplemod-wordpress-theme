@@ -73,7 +73,7 @@ wp_enqueue_style( 'style', get_stylesheet_uri());
 
 // Load Google fonts
 function custom_add_google_fonts() {
-	wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,900,800,700,600,500', false);
+	wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,300,200,100,900,800,700,600,500', false);
 }
 add_action('wp_enqueue_scripts', 'custom_add_google_fonts');
 

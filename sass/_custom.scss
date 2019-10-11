@@ -13,12 +13,12 @@ body {
 	position: relative;
 }
 header {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3612a1+0,3612a1+38,0280e0+100 */
-	background: #3612a1; /* Old browsers */
-	background: -moz-linear-gradient(-45deg,  #3612a1 0%, #3612a1 38%, #0280e0 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg,  #3612a1 0%,#3612a1 38%,#0280e0 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg,  #3612a1 0%,#3612a1 38%,#0280e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3612a1', endColorstr='#0280e0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$header-bg-1+0,3612a1+38,0280e0+100 */
+	background: $header-bg-1; /* Old browsers */
+	background: -moz-linear-gradient(left,  $header-bg-1 0%, $header-bg-1 20%, $header-bg-2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  $header-bg-1 0%, $header-bg-1 20%, $header-bg-2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, $header-bg-1 0%, $header-bg-1 20%, $header-bg-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$header-bg-1', endColorstr='$header-bg-2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	margin: 0;
 	padding: 1rem;
 }
@@ -126,20 +126,27 @@ footer {
  */
  .col-main {
 	color: $text;
-	font-size: 15px;
-	article {
-		margin-top: $box-margin;
-		background: $box-background;
-		padding: $main-column-padding;
-	}
+	font-size: 16px;
+	// line-height: 25px;
+ }
+ .post {
+	margin-top: $box-margin;
+	background: $box-background;
+	padding: $main-column-padding;
 	.post-title {
 		text-align: center;
-		margin: 0 0 2rem 0;
+		margin: 0 0 0px 0;
 		font-size: 1.8rem;
 		font-family: $title-font;
 	}
 	.post-title a {
 		color: $article-title;
+	}
+	.post-date {
+		display: block;
+		text-align: center;
+		color: $lighter-text;
+		margin: 0 0 20px 0;
 	}
 	p {
 		margin: 0 0 20px 0;
@@ -152,7 +159,7 @@ footer {
  * FOOTER
  */
 footer {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0280e0+0,3612a1+75,3612a1+100 */
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$header-bg-2+0,3612a1+75,3612a1+100 */
 	background: $header-bg-1; /* Old browsers */
 	background: -moz-linear-gradient(-45deg, $header-bg-2 0%, $header-bg-1 75%, $header-bg-1 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, $header-bg-2 0%, $header-bg-1 75%, $header-bg-1 100%); /* Chrome10-25,Safari5.1-6 */

@@ -1,13 +1,14 @@
 
 // Fonts
 
-$title-font: Raleway, sans-serif;
-$main-font: 'Helvetica', "Helvetica Neue", Roboto, Arial, sans-serif;
+$title-font: 'Raleway', sans-serif;
+$main-font: 'Open Sans', 'Arial', sans-serif;
 
 
 // Text Colors
 
-$text: rgb(100, 100, 100);
+$text: rgb(70, 70, 70);
+$lighter-text: scale-color($text, $lightness: +25%);
 $gray: #222222;
 $footer-text: #ffffff;
 $header-text: #ffffff;
@@ -26,12 +27,12 @@ $sidebar-hover: #7318f0;
 
 // Background Colors
 
-$background: rgb(220, 220, 220);
+$background: rgb(255, 255, 255);
 $box-background: #ffffff;
-$code-background: #f9f9f9;
+$code-background: #ffffff;
 
-$header-bg-1: #3612a1;
-$header-bg-2: #0280e0;
+$header-bg-1: #3612a1; // left side
+$header-bg-2: #0280e0; // right side
 
 
 // Spacing
